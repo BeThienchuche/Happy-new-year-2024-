@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page__main {
+    /* Ảnh nền của trang đầu tiên nếu bạn muốn đổi thì đổi tại đây */
+    background-image: url("/img/nen6.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position-y: -230px;
+}
+/* Thêm vào file style.css hoặc trong thẻ style trong thẻ head của HTML */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170vh;
+    margin: 0;
+}
+
+.h1 {
+    text-align: center;
+    align-items: center;
+    color: #db2525;
+}
+
+.buttons {
+    margin: 300px; /* Khoảng cách giữa nút và mép màn hình */
+}
+.cover {
+    display: block;
+    margin: 90px auto; /* Điều chỉnh khoảng cách nếu cần */
+}
+
+.newyear {
+    display: inline-block;
+    background-color: #3498db;
+    color: #020a0e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(850%);
+}
+.newyear {
+    z-index: 999;
+}
+
+.newyear {
+    background-image: linear-gradient(
+        to right,
+        #f0f411 0%,
+        #cd0a0a 51%,
+        #22ffaa 100%
+    );
+}
+
+.cover {
+    width: 240px;
+    height: 240px;
+   
+    box-shadow: 0 0 30px #eee;
+    position: absolute;
+    margin-top: 3rem;
+    left: calc(50% - 100px);
+  
+    border-radius: 120px;
+    border: 5px solid rgb(255, 17, 0);
+}
+
+/* Thêm vào file style.css hoặc trong thẻ style trong thẻ head của HTML */
+
+@keyframes changeColor {
+    0% {
+        color: #ff0000; /* Màu đầu tiên, ở đây là đỏ (#ff0000) */
+    }
+    10% {
+        color: #d8eb0f; /* Màu thứ hai, ở đây là cam (#ff9900) */
+    }
+    20% {
+        color: #25f644; /* Màu thứ ba, ở đây là vàng (#ffff00) */
+    }
+    30% {
+        color: #d5560d; /* Màu thứ tư, ở đây là xanh lá cây (#00ff00) */
+    }
+    40% {
+        color: #00ffff; /* Màu thứ năm, ở đây là xanh dương nhạt (#00ffff) */
+    }
+    50% {
+        color: #0000ff; /* Màu thứ sáu, ở đây là xanh dương (#0000ff) */
+    }
+    60% {
+        color: #9900ff; /* Màu thứ bảy, ở đây là tím (#9900ff) */
+    }
+    70% {
+        color: #fcf0f3; /* Màu thứ tám, ở đây là hồng (#ff00ff) */
+    }
+    80% {
+        color: #ff0099; /* Màu thứ chín, ở đây là hồng đậm (#ff0099) */
+    }
+    90% {
+        color: #360101; /* Màu thứ mười, ở đây là hồng nhạt (#ff9999) */
+    }
+    100% {
+        color: #ff0000; /* Quay lại màu đầu tiên để tạo hiệu ứng lặp */
+    }
+}
+
+.h1 {
+    text-align: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    animation: blink 1s infinite, changeColor 10s infinite; /* Thêm hiệu ứng đổi màu */
+}
+
+/* ... (Các phần CSS khác không thay đổi) */
+/* Thêm vào file style.css hoặc trong thẻ style trong thẻ head của HTML */
+
+@keyframes bendText {
+    0% {
+        text-shadow: 0 0 5px #efe4e4; /* Hiệu ứng ban đầu, đường gờ màu đỏ */
+    }
+    25% {
+        text-shadow: 5px 0 5px #045207; /* Hiệu ứng khiến chữ uốn lượn sang phải */
+    }
+    50% {
+        text-shadow: 0 0 5px #020622; /* Hiệu ứng khiến chữ uốn lượn lên */
+    }
+    75% {
+        text-shadow: -5px 0 5px #0000ff; /* Hiệu ứng khiến chữ uốn lượn sang trái */
+    }
+    100% {
+        text-shadow: 0 0 5px #075677; /* Quay lại hiệu ứng ban đầu */
+    }
+}
+
+.h1 {
+    text-align: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    animation: blink 1s infinite, changeColor 10s infinite, bendText 5s infinite; /* Thêm hiệu ứng uốn lượn */
+}
+
+#h1 {
+    font-family: Brush Script MT;
+    font-size: 74px;
+    transform: scaleY(1.5);
+}
+#tet2024 {
+    font-family: Brush Script MT; /* Thay đổi kiểu phông chữ tùy ý */
+    font-size: 30px; /* Thay đổi kích thước chữ tùy ý */
+    color: #f7f4f4; /* Màu chữ của "Giáp Thìn" */
+                /* Thêm màu cho các từ "Giáp Thìn" */
+}
+.audio-controls {
+    position: fixed;
+    bottom: -10px;
+    left: -10px;
+    margin: 10px;
+    z-index: 999;    
+}
+audio {
+    width: 150px; /* Điều chỉnh kích thước của nút audio */
+}
+.countdown {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Calibri;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+#countdown-text{
+    font-size: 24px;
+    font-family: Calibri;
+}
+
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkle 2s linear infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.2);
+    }
+}
+
+
+
+
+
